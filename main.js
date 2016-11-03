@@ -1,8 +1,8 @@
-var app 						= require('app'),
-		browserWindow 	= require('browser-window'),
-		globalShortcut	= require('global-shortcut'),
-		jQuery					= require('jquery'),
-		mainWindow 			= null;
+var app = require('electron').app;
+var browserWindow = require('electron').BrowserWindow;
+var globalShortcut = require('electron').globalShortcut;
+var jQuery = require('electron').jquery;
+var mainWindow = null;
 
 app.on('window-all-closed', function() {
   if (process.platform != 'darwin') {
